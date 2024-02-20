@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador de texto</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="/img/Logo.svg" alt="Logo da Alura">
+    </header>
+
+    <main>
+
+        <div class="entrada">
+            <textarea name="" id="textoEntrada" cols="30" rows="10" placeholder="Digite seu texto"></textarea>
+
+            <p class="aviso"><img src="/img/alerta.svg" alt="ponto de interrogacao" class="avisoImg"> Apenas letras minúsculas e sem acento.</p>
+
+            <div class="botoes">
+                <button class="botao" id="criptografar" onclick="criptografar()">Criptografar</button>
+                <button class="botao" id="descriptografar" onclick="descriptografar()">Descriptografar</button>
+            </div>
+        </div>
+        
+        <div class="saida">
+            <div id="mensagemNaoEncontrada">
+                <img src="/img/Boneco.svg" alt="" class="sem-mensagem">
+                <h1 class="h1SemMensagem">Nenhuma mensagem encontrada</h1>
+                <p class="pSemMensagem">Digite um texto que você deseja criptografar ou descriptografar.</p>
+            </div>
+
+            <textarea name="" id="textoSaida" cols="30" rows="10"></textarea>
+            <button class="botao" id="copiar" onclick="copiar()">Copiar</button>
+        </div>
+    </main>
+
+    <footer class="rodape">
+        <p>Desenvolvido por Rodrigo Piano 2024</p>
+    </footer>
+</body>
+</html>
